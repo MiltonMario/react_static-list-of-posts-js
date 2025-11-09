@@ -3,7 +3,6 @@ import { UserInfo } from '../UserInfo/UserInfo';
 import './PostInfo.scss';
 
 export const PostInfo = ({ post }) => {
-  
   return (
     <article className="PostInfo">
       <h3 className="PostInfo__title">{post.title}</h3>
@@ -15,7 +14,6 @@ export const PostInfo = ({ post }) => {
       <p className="PostInfo__body">{post.body}</p>
 
       <CommentList comments={post.comments} />
-
     </article>
   );
 };
